@@ -1,34 +1,79 @@
-<LinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/home"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#030B15"
+    android:padding="18dp">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Campus WorkHub"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_marginTop="35dp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de trabajos disponibles"
+        android:textColor="#8B97A8"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="20dp" />
 
     <Button
         android:id="@+id/btnCreatePost"
         android:text="Crear publicación"
-        android:layout_marginTop="60dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#0D6EFD"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="55dp" />
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Actualizar"
-        android:id="@+id/btnRefresh"/>
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Perfil"
-        android:id="@+id/btnPerfil"/>
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Actualizar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#111827" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/btnPerfil"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Perfil"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#111827" />
+
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerPosts"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp" />
 
 </LinearLayout>

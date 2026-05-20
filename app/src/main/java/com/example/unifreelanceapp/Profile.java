@@ -18,7 +18,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class Profile extends AppCompatActivity {
 
     Button btnLogout;
-    TextView tvNombre, tvEmail, tvCarrera, tvRol;
+    TextView tvNombre, tvEmail, tvCarrera, tvRol, tvNombreSmall;
     FirebaseAuth mAuth;
     FirebaseFirestore db;
 
@@ -30,6 +30,7 @@ public class Profile extends AppCompatActivity {
 
         btnLogout = findViewById(R.id.btnCerrarSesion);
         tvNombre = findViewById(R.id.tvName);
+        tvNombreSmall = findViewById(R.id.tvNameSmall);
         tvEmail = findViewById(R.id.tvEmail);
         tvCarrera = findViewById(R.id.tvCareer);
         tvRol = findViewById(R.id.tvRole);
@@ -91,6 +92,7 @@ public class Profile extends AppCompatActivity {
                         String role = documentSnapshot.getString("rol");
 
                         tvNombre.setText(name);
+                        tvNombreSmall.setText(name);
                         tvEmail.setText(email);
                         tvRol.setText(role);
 
