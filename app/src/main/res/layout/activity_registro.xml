@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyregistro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#030B15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:gravity="center"
+            android:text="💼"
+            android:textSize="42sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_logo_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Campus WorkHub"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea tu cuenta y comienza\na encontrar oportunidades"
+            android:textColor="#8B97A8"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/bg_input_login"
+            android:hint="Nombre completo"
+            android:textColorHint="#6B7280"
+            android:textColor="#FFFFFF"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_input_login"
+            android:hint="Correo"
+            android:textColorHint="#6B7280"
+            android:textColor="#FFFFFF"
+            android:inputType="textEmailAddress"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_input_login"
+            android:hint="Contraseña"
+            android:textColorHint="#6B7280"
+            android:textColor="#FFFFFF"
+            android:inputType="textPassword"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etCareer"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_input_login"
+            android:hint="Carrera"
+            android:textColorHint="#6B7280"
+            android:textColor="#FFFFFF"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tu rol"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spRole"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_input_login"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp" />
+
+        <TextView
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_btn_blue"
+            android:gravity="center"
+            android:text="CREAR CUENTA"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "395468550560",
+    "project_id": "unifreelanceapp",
+    "storage_bucket": "unifreelanceapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395468550560:android:c8a88516d986f5fb98f4c5",
+        "android_client_info": {
+          "package_name": "com.example.unifreelanceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo8qSxpg_h9rC10qJwBj7OSO7n_GmbtwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
