@@ -12,10 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UniFreelanceApp">
         <activity
-            android:name=".RegistroActivity"
+            android:name=".PostularmeActivity"
             android:exported="false" />
         <activity
-            android:name=".PostDetailActivity"/>
+            android:name=".RegistroActivity"
+            android:exported="false" />
+        <activity android:name=".PostDetailActivity" />
         <activity
             android:name=".Profile"
             android:exported="false" />
