@@ -17,10 +17,12 @@ import java.util.List;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
 
+    String role;
     List<Post> postList;
 
-    public PostAdapter(List<Post> postList) {
+    public PostAdapter(List<Post> postList, String role) {
         this.postList = postList;
+        this.role = role;
     }
 
     @NonNull
@@ -44,12 +46,12 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
 
         holder.itemView.setOnClickListener(v -> {
 
-            Intent intent = new Intent(v.getContext(), PostDetailActivity.class);
+            Intent intentadapter = new Intent(v.getContext(), PostDetailActivity.class);
 
-            intent.putExtra("title", post.getTitle());
-            intent.putExtra("description", post.getDescription());
-
-            v.getContext().startActivity(intent);
+            intentadapter.putExtra("title", post.getTitle());
+            intentadapter.putExtra("description", post.getDescription());
+            intentadapter.putExtra("rol", role);
+            v.getContext().startActivity(intentadapter);
 
         });
 
