@@ -1,34 +1,107 @@
-<LinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/home"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#030B15"
+    android:padding="18dp">
 
+    <!-- TITULO -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Campus WorkHub"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_marginTop="35dp" />
 
+    <!-- SUBTITULO -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de trabajos disponibles"
+        android:textColor="#8B97A8"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="20dp" />
 
+    <!-- BOTON -->
     <Button
         android:id="@+id/btnCreatePost"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
         android:text="Crear publicación"
-        android:layout_marginTop="60dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#0D6EFD" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Actualizar"
-        android:id="@+id/btnRefresh"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Perfil"
-        android:id="@+id/btnPerfil"/>
-
+    <!-- LISTA -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerPosts"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="18dp"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp" />
+
+    <!-- MENU INFERIOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bg_bottom_menu"
+        android:padding="6dp">
+
+        <!-- INICIO -->
+        <TextView
+            android:id="@+id/btnRefresh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="⌂\nInicio"
+            android:textColor="#0D6EFD"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <!-- BUSCAR -->
+        <TextView
+            android:id="@+id/btnBuscar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="⌕\nBuscar"
+            android:textColor="#8B97A8"
+            android:textSize="12sp" />
+
+        <!-- POSTS -->
+        <TextView
+            android:id="@+id/btnPosts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="▣\nPosts"
+            android:textColor="#8B97A8"
+            android:textSize="12sp" />
+
+        <!-- PERFIL -->
+        <TextView
+            android:id="@+id/btnPerfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="♙\nPerfil"
+            android:textColor="#8B97A8"
+            android:textSize="12sp" />
+
+    </LinearLayout>
 
 </LinearLayout>

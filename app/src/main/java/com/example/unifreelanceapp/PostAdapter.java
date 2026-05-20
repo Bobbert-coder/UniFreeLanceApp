@@ -1,6 +1,7 @@
 package com.example.unifreelanceapp;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,6 +41,17 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         Post post = postList.get(position);
         holder.tvTitle.setText(post.titulo);
         holder.tvDescription.setText(post.descripcion);
+
+        holder.itemView.setOnClickListener(v -> {
+
+            Intent intent = new Intent(v.getContext(), PostDetailActivity.class);
+
+            intent.putExtra("title", post.getTitle());
+            intent.putExtra("description", post.getDescription());
+
+            v.getContext().startActivity(intent);
+
+        });
 
         if(post.userid != null && post.userid.equals(currentUserId)){
             holder.btnDelete.setVisibility(View.VISIBLE);

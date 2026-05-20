@@ -15,4 +15,13 @@ public class Post {
         this.titulo = titulo;
         this.descripcion = descripcion;
     }
+
+    public String getTitle()
+    {
+        return this.titulo;
+    }
+    public String getDescription()
+    {
+        return this.descripcion;
+    }
 }
