@@ -3,6 +3,7 @@ package com.example.unifreelanceapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -18,7 +19,8 @@ import java.util.List;
 public class HomeActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    Button btnCreatePost, btnActualizar, btnPerfil;
+    TextView btnRefresh, btnPerfil, btnBuscar, btnPosts, btnActualizar;
+    Button btnCreatePost;
     PostAdapter adapter;
     List<Post> postList;
 
