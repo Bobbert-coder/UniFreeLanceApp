@@ -13,6 +13,8 @@ public class PostDetailActivity extends AppCompatActivity {
     TextView tvTitle, tvDescription, tvFlecha;
     Button btnPostularme;
 
+    String postId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,17 +29,17 @@ public class PostDetailActivity extends AppCompatActivity {
         String description = getIntent().getStringExtra("description");
         String role = getIntent().getStringExtra("rol");
 
+        // GUARDAR EL POST ID
+        postId = getIntent().getStringExtra("postId");
+
         tvTitle.setText(title);
         tvDescription.setText(description);
 
-        // OCULTAR BOTON SI ES EMPRESA
         if (role != null && role.equalsIgnoreCase("empresa")) {
             btnPostularme.setVisibility(View.GONE);
         }
 
-        tvFlecha.setOnClickListener(v->{
-            finish();
-        });
+        tvFlecha.setOnClickListener(v -> finish());
 
         btnPostularme.setOnClickListener(v -> {
 
@@ -49,9 +51,11 @@ public class PostDetailActivity extends AppCompatActivity {
             intent.putExtra("title", title);
             intent.putExtra("description", description);
 
+            // ENVIAR POST ID
+            intent.putExtra("postId", postId);
+
             startActivity(intent);
 
         });
-
     }
 }

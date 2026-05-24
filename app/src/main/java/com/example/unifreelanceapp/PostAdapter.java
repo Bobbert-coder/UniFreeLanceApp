@@ -51,6 +51,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
             intentadapter.putExtra("title", post.getTitle());
             intentadapter.putExtra("description", post.getDescription());
             intentadapter.putExtra("rol", role);
+            intentadapter.putExtra("postId", post.id);
             v.getContext().startActivity(intentadapter);
 
         });

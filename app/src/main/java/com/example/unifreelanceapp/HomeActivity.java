@@ -78,7 +78,6 @@ public class HomeActivity extends AppCompatActivity {
                         post.id = doc.getId();
                         postList.add(post);
                     }
-
                     adapter.notifyDataSetChanged();
                 });
     }

@@ -66,7 +66,7 @@
                 android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Juan Pérez"
+                android:text=""
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="32sp"
@@ -113,7 +113,7 @@
                 android:id="@+id/tvEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="usuario@universidad.edu"
+                android:text=""
                 android:textColor="#9CA3AF"
                 android:textSize="18sp"
                 android:layout_marginTop="6dp" />
@@ -139,7 +139,7 @@
                 android:id="@+id/tvRole"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Estudiante"
+                android:text=""
                 android:textColor="#9CA3AF"
                 android:textSize="18sp"
                 android:layout_marginTop="6dp" />
@@ -165,13 +165,12 @@
                 android:id="@+id/tvCareer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ingeniería en Sistemas"
+                android:text=""
                 android:textColor="#9CA3AF"
                 android:textSize="18sp"
                 android:layout_marginTop="6dp" />
 
         </LinearLayout>
-
         <!-- BOTON -->
         <Button
             android:id="@+id/btnCerrarSesion"

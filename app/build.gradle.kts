@@ -44,6 +44,7 @@ dependencies {
     implementation(libs.activity.ktx)
 
     implementation(libs.appcompat)
+    implementation(libs.firebase.storage)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
