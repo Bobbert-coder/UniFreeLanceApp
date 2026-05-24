@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/bg_card_post"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- FILA SUPERIOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTituloPostulacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescripcionPostulacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="3"
+                android:textColor="#9CA3AF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- BOTON ELIMINAR -->
+        <TextView
+            android:id="@+id/btnEliminarPostulacion"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="✕"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/bg_btn_delete_postulacion"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCVPostulacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#D1D5DB"
+        android:textSize="13sp"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/tvEstadoPostulacion"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_chip_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:id="@+id/btnAceptarPostulacion"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Aceptar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:background="@drawable/bg_btn_aceptar_postulacion" />
+
+    </LinearLayout>
+
+</LinearLayout>
