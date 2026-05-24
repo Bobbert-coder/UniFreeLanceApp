@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UniFreelanceApp">
         <activity
+            android:name=".MisPublicacionesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MisPostulacionesActivity"
+            android:exported="false" />
+        <activity
             android:name=".PostularmeActivity"
             android:exported="false" />
         <activity
@@ -27,6 +33,7 @@
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
+        <activity android:name=".PostulacionesPorPublicacionActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -1,27 +1,98 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="24dp"
-    android:orientation="vertical"
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#030B15"
+    android:fillViewport="true">
 
-    <EditText
-        android:id="@+id/etTitle"
-        android:hint="Título"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:id="@+id/etDescription"
-        android:hint="Descripción"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"/>
+        android:orientation="vertical"
+        android:padding="22dp">
 
-    <Button
-        android:id="@+id/btnSave"
-        android:text="Publicar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear publicación"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginTop="25dp" />
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publica una oportunidad para estudiantes"
+            android:textColor="#8B97A8"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_post"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Título del trabajo"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_input_login"
+                android:hint="Ej. Diseñador UX/UI"
+                android:textColorHint="#6B7280"
+                android:textColor="#FFFFFF"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_input_login"
+                android:gravity="top"
+                android:hint="Describe actividades, requisitos, modalidad y contacto..."
+                android:textColorHint="#6B7280"
+                android:textColor="#FFFFFF"
+                android:padding="16dp"
+                android:inputType="textMultiLine"
+                android:minLines="5" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="26dp"
+            android:text="PUBLICAR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#0D6EFD" />
+
+    </LinearLayout>
+
+</ScrollView>
